@@ -8,4 +8,6 @@ services:
       - 80:80
     volumes:
       - ./nginx/nginx1.conf:/etc/nginx/nginx.conf
-#      - ./nginx/conf.d/default.conf:/etc/nginx/conf.d/default.conf
+      - ./nginx/conf.d/default.conf:/etc/nginx/conf.d/default.conf
+      - ./web:/usr/share/nginx/html
+      - ./web1:/usr/share/nginx/html1
